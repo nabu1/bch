@@ -1,0 +1,9 @@
+.idea
+node_modules
+*.jpg
+*.png
+*.psd
+docker*
+README*
+.env
+babel*

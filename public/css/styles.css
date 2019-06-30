@@ -1,0 +1,10 @@
+#result {
+    width: 400px;
+    height: 400px;
+}
+#result.correct {
+    background-image: url(../img/correct.jpg);
+}
+#result.incorrect {
+    background-image: url(../img/incorrect.jpg);
+}
