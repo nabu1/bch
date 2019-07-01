@@ -2,17 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Online checker for brackats. Quick, perfect and easy">
+    <meta name="keywords" content="brackats, checker, online, friendly, easy, free, perfect">
     <title>Bracats Checker</title>
     <script type="module" src="js/app.js"></script>
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <h1>Bracats Checker</h1>
-    <form id="form">
-        <label for="input">String to check</label>
-        <input type="text" id="input" />
-        <input type="submit" value="Check" />
-    </form>
-    <div id="result"></div>
+    <main>
+      <h1>Bracats Checker</h1>
+      <div id="container">
+        <form id="form" title="checker's form">
+          <!-- <label for="input">String to check</label> -->
+          <input type="text" id="input" label="user input" placeholder="&nbsp;&nbsp;String to check"/>
+          <input type="submit" id="submit-button" value="Check" label="submit button"/>
+        </form>
+
+        <div id="result" title="cat's photo"></div>
+      </div>
+      
+      <div id="validation" title="validation message"></div>
+    </main>
 </body>
 </html>

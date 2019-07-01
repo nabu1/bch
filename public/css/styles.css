@@ -1,10 +1,73 @@
-#result {
-    width: 400px;
-    height: 400px;
+main {
+  margin-left: 400px;
 }
+
+#container {
+  width: 530px;
+  height: 530px;
+  background: grey;
+  border-radius: 5%;
+  margin-top: 10px;
+}
+
+#container:hover {
+  background: darkgray;
+}
+
+#form {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  width: 370px;
+  height: 30px;
+  top: 20px;
+  left: 50px; 
+  border-radius: 15px;
+  background: white;
+  color: black;
+  margin-left: 20px;
+  
+}
+
+#input {
+  margin-top: 20px;
+  border-radius: 5%;
+  width: 280px;
+  background: white;
+  
+}
+
+#input:focus {
+  background: lightgray;
+}
+
+
+#submit-button {
+  background: black;
+  color: white;
+  width: 60px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#result {
+  width: 400px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 70px;
+  
+  
+}
+
 #result.correct {
-    background-image: url(../img/correct.jpg);
+  background-image: url(../img/correct.jpg);
 }
 #result.incorrect {
-    background-image: url(../img/incorrect.jpg);
+  background-image: url(../img/incorrect.jpg);
+}
+
+#validation {
+  margin-top: 20px;
 }
