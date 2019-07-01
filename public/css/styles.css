@@ -27,7 +27,6 @@ main {
   background: white;
   color: black;
   margin-left: 20px;
-  
 }
 
 #input {
@@ -35,7 +34,6 @@ main {
   border-radius: 5%;
   width: 280px;
   background: white;
-  
 }
 
 #input:focus {
@@ -57,8 +55,6 @@ main {
   height: 400px;
   margin-top: 40px;
   margin-left: 70px;
-  
-  
 }
 
 #result.correct {

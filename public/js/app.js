@@ -15,16 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   formElem.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-    console.log('1111')
-    console.log('%c inputElem.value = ' + inputElem.value)
-
-    const sanitizedInput = sanitizeString(inputElem.value)
-    console.log('before sanitize = ', inputElem.value)
-    console.log('after sanitize = ', sanitizedInput)
+    const sanitizedInput = sanitizeString(inputElem.value);
 
     const result = check(inputElem.value);
-    console.log('%c result = ' + result, 'color: white')
     validationElem.innerHTML = result ? OK_VALIDATION_MESSAGE : BAD_VALIDATION_MESSAGE
 
     resultElem.classList.remove(`${result ? 'in' : ''}correct`);
@@ -34,6 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
   formElem.addEventListener('input', () => {
     resultElem.classList.remove('correct', 'incorrect');
   });
-
-
 }, false);
