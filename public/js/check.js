@@ -13,13 +13,16 @@ function isStringCatsOnly(str) {
 
 export const check = str => {
   let len = str.length, i = 0, setLength = 6
+  const cats = ['cat', 'CAT', 'cAt']
   
-  if (!len || (len % 6 !== 0)) return false // 'Error: incorrect number of letters' 
-  if (!isStringCatsOnly(str)) return false  // 'Error: incorrect substring(s)'
+  if (!len || (len % 6 !== 0)) return false 
+  if (!isStringCatsOnly(str)) return false  
 
   while(len) { 
     const half1 = str.substr(i, setLength/2)
     const reversedHalf2 = str.substr(i + setLength/2, setLength/2).split('').reverse().join('')
+
+    if (half1.length === 3 && !cats.includes(half1)) return false
 
     if(half1 === reversedHalf2) {
       str = str.substr(setLength)
